@@ -88,7 +88,7 @@ const  printQuote = () => {
 
 const generateRandomColor = () =>
 {
-    let randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+    let randomColor = '#'+Math.floor(Math.random()*16777215).toString(16); /** random color from CSS Tricks https://css-tricks.com/snippets/javascript/random-hex-color/ */
     document.body.style.backgroundColor = randomColor
     //random color will be generated
 };
