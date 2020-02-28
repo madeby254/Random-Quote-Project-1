@@ -41,7 +41,7 @@ const quotes = [
     genre: " Education"
   },
   {
-    quote: 'Hi i am Dave',
+    quote: 'Hi am Dave',
     source: 'Dave McFarland',
     year: "1800",
     genre: " Treehouse"
