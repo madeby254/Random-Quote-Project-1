@@ -63,6 +63,19 @@ const getRandomQuote = () => {
  * `printQuote` function
 ***/
 
+const  printQuote = () => {
+	let retrieveQuote = ( getRandomQuote() );
+	let string = "<p class='quote'>" + retrieveQuote.quote + "</p>";
+	string += "<p class='source'>" + retrieveQuote.source;
+	if ( retrieveQuote.year ) {
+		string += "<span class='year'>" + '<span> </span>' + retrieveQuote.year + "</span>"
+	};
+	if ( retrieveQuote.genre ) {
+		string += "<cite class='genre'>" + retrieveQuote.genre + "</cite>"
+	};
+	string += "</p"
+	document.getElementById( 'quote-box' ).innerHTML = string;
+};
 
 
 /***
