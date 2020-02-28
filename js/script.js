@@ -10,6 +10,8 @@ project 1 - A Random Quote Generator
 /*** 
  * `quotes` array 
 ***/
+
+// Created an array storing the quotes
 const quotes = [
   {
     quote: "I don't fight for the money. I fight for my legacy. I fight for history. I fight for my people.",
@@ -86,13 +88,13 @@ const  printQuote = () => {
 
 const generateRandomColor = () =>
 {
-    var randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+    let randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
     document.body.style.backgroundColor = randomColor
     //random color will be generated
 };
 
-setInterval(printQuote, 5000)
-setInterval(generateRandomColor,5000)
+setInterval(printQuote, 5000) /**Loads a new quote every 5 seconds */
+setInterval(generateRandomColor,5000) /**Gets a random color every 5 seconds */
 
 
 document.getElementById('load-quote').addEventListener("click", printQuote, false);
