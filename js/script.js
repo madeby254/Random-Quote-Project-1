@@ -95,7 +95,7 @@ const generateRandomColor = () =>
     //random color will be generated
 };
 
-setInterval(printQuote, 5000) /**Loads a new quote every 5 seconds */
+setInterval(printQuote,5000) /**Loads a new quote every 5 seconds */
 setInterval(generateRandomColor,5000) /**Gets a random color every 5 seconds */
 
 
