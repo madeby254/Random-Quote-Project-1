@@ -63,18 +63,19 @@ const getRandomQuote = () => {
  * `printQuote` function
 ***/
 
+
 const  printQuote = () => {
 	let retrieveQuote = ( getRandomQuote() );
-	let string = "<p class='quote'>" + retrieveQuote.quote + "</p>";
-	string += "<p class='source'>" + retrieveQuote.source;
+	let printing = "<p class='quote'>" + retrieveQuote.quote + "</p>";
+	printing  += "<p class='source'>" + retrieveQuote.source;
 	if ( retrieveQuote.year ) {
-		string += "<span class='year'>" + '<span> </span>' + retrieveQuote.year + "</span>"
+		printing  += "<span class='year'>" + '<span> </span>' + retrieveQuote.year + "</span>"
 	};
 	if ( retrieveQuote.genre ) {
-		string += "<cite class='genre'>" + retrieveQuote.genre + "</cite>"
+		printing += "<cite class='genre'>" + retrieveQuote.genre + "</cite>"
 	};
-	string += "</p"
-	document.getElementById( 'quote-box' ).innerHTML = string;
+	printing  += "</p"
+	document.getElementById( 'quote-box' ).innerHTML = printing;
 };
 
 
@@ -82,5 +83,16 @@ const  printQuote = () => {
  * click event listener for the print quote button
  * DO NOT CHANGE THE CODE BELOW!!
 ***/
+
+const generateRandomColor = () =>
+{
+    var randomColor = '#'+Math.floor(Math.random()*16777215).toString(16);
+    document.body.style.backgroundColor = randomColor
+    //random color will be generated
+};
+
+setInterval(printQuote, 5000)
+setInterval(generateRandomColor,5000)
+
 
 document.getElementById('load-quote').addEventListener("click", printQuote, false);
