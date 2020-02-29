@@ -16,7 +16,7 @@ const quotes = [
   {
     quote: "I don't fight for the money. I fight for my legacy. I fight for history. I fight for my people.",
     source: 'Khabib Nurmagomedov',
-    year: "2018",
+    year: 2018,
     genre: "Sports",
     citation:'ufc.com'
   },
@@ -39,14 +39,14 @@ const quotes = [
   {
     quote: 'Education is the most powerful weapon which you can use to change the world.',
     source: 'Nelson Mandela',
-    year: "2013",
+    year: 2013,
     genre: " Education",
  
   },
   {
     quote: 'Hi am Dave',
     source: 'Dave McFarland',
-    year: "1800",
+    year: 1800,
     genre: " Treehouse",
     citation:'Treehouse Techdegree Intro'
   },
