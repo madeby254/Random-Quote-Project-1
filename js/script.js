@@ -69,6 +69,7 @@ const getRandomQuote = () => {
  * `printQuote` function
 ***/
 
+// Write a conditional statement to check for Year, Genre and Citation if available print it 
 
 const  printQuote = () => {
 	let retrieveQuote = ( getRandomQuote() );
